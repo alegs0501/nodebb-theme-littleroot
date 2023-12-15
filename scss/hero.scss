@@ -1,0 +1,22 @@
+#hero {
+    background-image: url("../../foro/plugins/nodebb-theme-littleroot/images/hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: $white;
+    position: absolute;
+    top: 95px;
+    left: 0;
+    width: 100%;
+    @include responsive-style(padding, 2.375rem 0, 1.5rem 0);
+    
+    .head {
+        margin-bottom: 0px;
+        @include responsive-style(font-size, 1.125rem, 1rem);
+    }
+
+    .slogan {
+        font-weight: 900;
+        @include responsive-style(font-size, 3.625rem, 2.625rem);
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "id": "nodebb-theme-littleroot",
+    "name": "Littleroot",
+    "description": "A theme based on the Persona theme by NodeBB",
+    "url": "https://github.com/psychobunny/nodebb-theme-littleroot",
+    "screenshot": "screenshot.png"
+}

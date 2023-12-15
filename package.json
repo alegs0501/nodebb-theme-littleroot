@@ -1,0 +1,35 @@
+{
+  "name": "nodebb-theme-littleroot",
+  "version": "0.1.0",
+  "nbbpm": {
+    "compatibility": "^3.0.0"
+  },
+  "description": "Theme based on Persona",
+  "main": "library.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NodeBB/nodebb-theme-littleroot"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "nodebb",
+    "theme",
+    "forum",
+    "bootstrap",
+    "responsive"
+  ],
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/NodeBB/nodebb-theme-littleroot/issues"
+  },
+  "dependencies": {
+    "pulling": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-nodebb": "^0.0.2",
+    "eslint-plugin-import": "^2.24.2"
+  }
+}

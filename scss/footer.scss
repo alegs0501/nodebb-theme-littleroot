@@ -1,0 +1,100 @@
+$desktop-template: "pages social"
+					"legal social";
+$mobile-template: "social"
+					"pages"
+					"legal";
+
+.footer {
+	background-color: $primary-50;
+	padding: 3rem 0;
+
+	.site-info {
+		color: $primary-900;
+		margin-bottom: 1.5625rem;
+
+		.site-title {
+			font-size: 1.625rem;
+			font-weight: 700;
+			margin-bottom: 0;
+
+			a {
+				color: $primary-900;
+			}
+		}
+
+		.site-description {
+			font-size: .75rem;
+			font-weight: 500;
+			margin-bottom: 0;
+		}
+	}
+
+	.site-links	{
+		display: grid;
+		row-gap: 1.5625rem;
+		align-items: end;
+		justify-content: space-between;
+		@include responsive-style(grid-template-areas, $desktop-template, $mobile-template);
+
+		.legals {
+			display: flex;
+			gap: 0 1rem;
+			@include responsive-style(flex-direction, row, column);
+		}
+	}
+
+	.site-link {
+		display: flex;
+		list-style: none;
+		padding: 0;
+
+		a {
+			color: $black;
+		}
+
+		&-pages {
+			grid-area: pages;
+			gap: 16px;
+			@include responsive-style(flex-direction, row, column);
+			a {
+				font-size: 1rem;
+			}
+		}
+
+		&-legal {
+			grid-area: legal;
+			a {
+				font-size: .75rem;
+				white-space: nowrap;
+			}
+		}
+
+		&-social {
+			grid-area: social;
+			column-gap: 10px;
+
+			li {
+				height: 40px;
+				width: 40px;
+				border-radius: 50%;
+				border: 1px solid $secondary-900;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 20px;
+			}
+
+			a {
+				color: $secondary-900;
+			}
+		}
+	}
+}
+
+.site-copy {
+	display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+	font-size: .875rem;
+}

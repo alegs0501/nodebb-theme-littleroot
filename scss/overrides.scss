@@ -1,0 +1,62 @@
+// only overrides to bs5 variables here
+
+// TODO: decide if we should readd this, persona modified bootstrap to increase padding
+// $input-btn-padding-y:         .625rem !default;
+// $input-btn-padding-x:         1rem !default;
+
+$navbar-nav-link-padding-x: 0.875rem!default;
+
+// persona colors
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #222222 !default;
+
+$primary: darken(#428bca, 6.5%) !default;
+$secondary: $gray-600 !default;
+$success: #00bc70 !default;
+$info: #5bc0de !default;
+$warning: #e2e735 !default;
+$danger: #b11d36 !default;
+$light: $gray-100 !default;
+$dark: $gray-900 !default;
+$link-decoration:none !default;
+$muted: #78858f !default;
+
+$primary-900: rgb(0, 79, 81) !default;
+$primary-700: #90a59f !default;
+$primary-500: #bdcdc3 !default;
+$primary-300: #d5eae5 !default;
+$primary-50: rgb(243, 245, 244) !default;
+
+$secondary-900: #561f2b !default;
+$secondary-700: #804c55 !default;
+$secondary-500: #a9727b !default;
+$secondary-300: #d49aa3 !default;
+
+// font
+$font-family-sans-serif:  -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+// BS5 default is 1rem(16px)
+$font-size-base: 0.875rem!default;
+
+// no rounded in persona
+$enable-rounded: false;
+
+// no caret on dropdown-toggle
+$enable-caret: false;
+
+// disable smooth scroll, this makes window.scrollTo(0,0) in ajaxify.js take x milliseconds
+$enable-smooth-scroll: false;
+
+:root {
+    --bs-primary: $primary-900 !important;
+    --bs-primary-rgb: 0, 79, 81 !important;
+    --bs-light-rgb: 243, 245, 244 !important;
+}
