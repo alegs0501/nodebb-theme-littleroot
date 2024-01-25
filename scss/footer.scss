@@ -63,6 +63,8 @@ $mobile-template: "social"
 
 		&-legal {
 			grid-area: legal;
+			display: flex;
+			gap: .25rem;
 			a {
 				font-size: .75rem;
 				white-space: nowrap;
